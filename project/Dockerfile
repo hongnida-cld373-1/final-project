@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install --only=production
 
 # Copy all project files (Safe with .dockerignore)
-COPY . .
+COPY project/ .
 
 # Security: Create and use a non-root user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
