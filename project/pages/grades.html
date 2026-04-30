@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUPP LMS - Grades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-[#003366] text-white p-4 shadow-lg border-b-4 border-[#C5A059]">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-[#003366] font-bold text-xl">A</div>
+                <h1 class="text-xl font-bold">AUPP <span class="text-[#C5A059]">LMS</span></h1>
+            </div>
+            <div class="space-x-8 font-medium">
+                <a href="index.html" class="hover:text-yellow-500 transition">Dashboard</a>
+                <a href="courses.html" class="hover:text-yellow-500 transition">Courses</a>
+                <a href="grades.html" class="text-[#C5A059] border-b-2 border-[#C5A059] pb-1">Grades</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="container mx-auto mt-12 px-6 max-w-5xl">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Internal Grade Sheet</h2>
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <table class="w-full text-left">
+                <thead class="bg-gray-50 border-b">
+                    <tr>
+                        <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Student Name</th>
+                        <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Course</th>
+                        <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Score</th>
+                        <th class="px-6 py-4 text-xs font-bold text-gray-400 uppercase">Result</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-800">Sok Ly</td>
+                        <td class="px-6 py-4 text-gray-600">DevOps & CI/CD</td>
+                        <td class="px-6 py-4 font-bold text-[#003366]">95</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">Passed</span></td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-semibold text-gray-800">Chanrath S.</td>
+                        <td class="px-6 py-4 text-gray-600">Cloud Computing</td>
+                        <td class="px-6 py-4 font-bold text-[#003366]">88</td>
+                        <td class="px-6 py-4"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">Passed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

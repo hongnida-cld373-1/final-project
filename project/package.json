@@ -1,0 +1,13 @@
+{
+  "name": "aupp-lms-simulation",
+  "version": "1.0.0",
+  "description": "Simulation of AUPP Internal Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "format-style": "echo 'Standardizing styles...'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUPP LMS - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-[#003366] text-white p-4 shadow-lg border-b-4 border-[#C5A059]">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-[#003366] font-bold text-xl">A</div>
+                <h1 class="text-xl font-bold">AUPP <span class="text-[#C5A059]">LMS</span></h1>
+            </div>
+            <div class="space-x-8 font-medium">
+                <a href="index.html" class="text-[#C5A059] border-b-2 border-[#C5A059] pb-1">Dashboard</a>
+                <a href="courses.html" class="hover:text-yellow-500 transition">Courses</a>
+                <a href="grades.html" class="hover:text-yellow-500 transition">Grades</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="container mx-auto mt-12 px-6 max-w-5xl">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Admin Dashboard</h2>
+            <p class="text-gray-500">Welcome to the Internal AUPP Platform management console.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-xl mb-4 text-[#003366]">Deployment Info</h3>
+                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                    This platform is currently serving as a <strong>DevOps Simulation</strong>. 
+                    Changes made to this repository trigger a full CI/CD pipeline including:
+                </p>
+                <ul class="text-xs space-y-2 text-gray-500">
+                    <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> SonarQube Quality Check</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> Trivy Security Scan</li>
+                    <li class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> Terraform EC2 Provisioning</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-bold text-xl mb-4 text-[#C5A059]">System Overview</h3>
+                    <div class="flex justify-between items-center bg-slate-50 p-4 rounded-lg">
+                        <span class="text-gray-600 font-medium">Server Status</span>
+                        <span class="text-green-600 font-bold">ONLINE</span>
+                    </div>
+                </div>
+                <button class="mt-4 w-full py-3 bg-[#003366] text-white rounded-xl font-bold hover:opacity-90 transition">
+                    Generate Report
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
