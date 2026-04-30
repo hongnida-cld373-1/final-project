@@ -6,8 +6,8 @@ WORKDIR /usr/src/app
 # Copy dependency definitions
 COPY package*.json ./
 
-# Install only production dependencies
-RUN npm install --only=production
+# Install production dependencies
+RUN npm install --omit=dev
 
 # Copy all project files (Safe with .dockerignore)
 COPY project/ .
