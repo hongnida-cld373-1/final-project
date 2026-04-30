@@ -80,7 +80,7 @@ app.get('/api', (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`=========================================`);
     console.log(`AUPP LMS SIMULATION STARTING...`);
     console.log(`Local URL: http://localhost:${PORT}`);
