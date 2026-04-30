@@ -8,7 +8,7 @@ COPY project/package*.json ./
 RUN npm install --omit=dev
 
 # Copy app source
-COPY project/ .
+COPY . .
 
 # Create non-root user
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
