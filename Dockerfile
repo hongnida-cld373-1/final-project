@@ -4,7 +4,7 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 
 # Copy dependency definitions
-COPY package*.json ./
+COPY project/package*.json ./
 
 # Install production dependencies
 RUN npm install --omit=dev
